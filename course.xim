@@ -1,0 +1,32 @@
+---
+name: NSC Math 120
+description: This course is an introduction to college math at Nevada State College. The content  includes consumer mathematics, probability, and modeling.
+---
+
+Introduction
+Percentages/Percentages
+  Percentages/PercentagesWork
+Interest/Interest
+  Interest/InterestWork
+Mortgage/Mortgage
+  Mortgage/MortgageWork
+BasicProb/BasicProb
+  BasicProb/ProbabilityDefs
+DependentOrIndependent/DependentOrIndependent
+ConditionalProbabilities/IntroToConditional
+IntroToFunctions/IntroToFunctions
+  IntroToFunctions/Functions/FunctionDefinition
+  IntroToFunctions/Functions/FunctionNotation
+  IntroToFunctions/Functions/VisualizingFunctions
+AlgebraOfFunctions/AlgebraOfFunctions
+  AlgebraOfFunctions/FunctionArithmetic/FunctionArithmetic
+  AlgebraOfFunctions/FunctionComposition/FunctionComposition
+  AlgebraOfFunctions/InverseFunctions/InverseFunctions
+ParentFunctions/ParentFunctions
+ParentFunctions2/ParentFunctions2.tex
+  ParentFunctions2/MoreParentFunctions/WaveFunctions
+  ParentFunctions2/MoreParentFunctions/ExponentialFunctions
+  ParentFunctions2/MoreParentFunctions/Logarithms
+
+
+
