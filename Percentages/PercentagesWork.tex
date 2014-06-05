@@ -14,7 +14,7 @@
 
 \begin{document}
 \begin{abstract}
-We review the concept of percentages and introducte \protect\url{ConsumerMath.org}.
+We review the concept of percentages.
 \end{abstract}
 \maketitle
 
@@ -53,6 +53,9 @@ The label on a 12 oz.\ can of \customfont{Coca-Cola}\ states that it contains 39
 \begin{hint}
 \begin{equation*}13=\frac{39}{\emph{\text{Whole}}}\times 100\end{equation*}
 \end{hint}
+\answer{300} grams
+
+\begin{comment}
 \begin{expression-answer}
 function validator(p) {
     if (p == 300)
@@ -61,13 +64,14 @@ function validator(p) {
       return 0;
   }
 \end{expression-answer}
+\end{comment}
 \end{solution}
 
 Nice work!
 \end{question}
 
 \begin{question}
-For fiscal years 2013--2015, the Nevada legislature appropriated $9.0\%$ of its $\$20.1$ billion budget to infrastructre. How much was appropriated for infrastructure? 	
+For fiscal years 2013--2015, the Nevada legislature appropriated $9.0\%$ of its $\$20.1$ billion budget to infrastructre. How many billions of dollars were appropriated for infrastructure? 	
 
 \begin{solution}
 \begin{hint}
@@ -76,6 +80,12 @@ For fiscal years 2013--2015, the Nevada legislature appropriated $9.0\%$ of its 
 \begin{hint}
 If you use $\$20,100,000,000$ in your calculations, your answer will be in dollars. If you use $\$20.1$ in your calculations, your answer will be in billions of dollars.
 \end{hint}
+\begin{hint}
+Don't round your answer.
+\end{hint}
+\answer{1.809} billions of dollars
+
+\begin{comment}
 \begin{expression-answer}
 function validator(p) {
     if (p - 1.809) &lt; 0.01)
@@ -85,6 +95,7 @@ function validator(p) {
       return 0;
   }
 \end{expression-answer}
+\end{comment}
 \end{solution}	
 
 Nice work!
@@ -111,8 +122,5 @@ If my taxi fare is $\$25.50$ and I pay the driver $\$30$, what percent tip am I 
     \end{hint}
   \end{solution}
 \end{question}
-
-A significant piece of the Consumer Mathematics portion of this course involves the use of a financial simulator at \url{ConsumerMath.org}.
-
 
 \end{document}
