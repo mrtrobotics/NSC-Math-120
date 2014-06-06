@@ -11,11 +11,15 @@ Interest/Interest
 Credit/Credit
 Mortgage/Mortgage
   Mortgage/MortgageWork
+Insurance/Insurance
+  Insurance/InsuranceWork
 BasicProb/BasicProb
   BasicProb/ProbabilityDefs
 DependentOrIndependent/DependentOrIndependent
 ConditionalProbabilities/IntroToConditional
 ExpectedValue/ExpectedValue
+StatsIntro/StatsIntro
+NormalCurves/NormalCurves
 IntroToFunctions/IntroToFunctions
   IntroToFunctions/Functions/FunctionDefinition
   IntroToFunctions/Functions/FunctionNotation
@@ -31,5 +35,5 @@ ParentFunctions2/ParentFunctions2
   ParentFunctions2/MoreParentFunctions/Logarithms
 Transformations/Transformations
 Modeling/Modeling
-
+Optimization/Optimization
 
