@@ -7,8 +7,8 @@
 
 \input{preamble.tex} %% we can turn off input when making a master document
 
-\prerequisites{none}
-\outcomes{ximeraLatex}
+%\prerequisites{none}
+%\outcomes{ximeraLatex}
 
 \title{Expected value}
 
@@ -83,25 +83,25 @@ And we can read off the value of each event from the description of the game. No
 
 This information can be put into a probability tree. The values are listed at the end of the branches.
 
-\begin{center}
+%% \begin{center}
 
-\tikzstyle{level 1}=[level distance=2cm, sibling distance=1cm]
-\tikzstyle{level 2}=[level distance=2cm, sibling distance=.75cm]
+%% \tikzstyle{level 1}=[level distance=2cm, sibling distance=1cm]
+%% \tikzstyle{level 2}=[level distance=2cm, sibling distance=.75cm]
 
-\begin{tikzpicture}[grow=right]
-\node{}
-    child {
-       	node[label=right:{Tails: Lose \$1}] {}
-        edge from parent
-        node[below] {\footnotesize $\frac{1}{2}$}
-    }
-    child {
-       	node[label=right:{Heads: Win \$0.99}] {}
-        edge from parent
-        node[above] {\footnotesize $\frac{1}{2}$}
-    };
-  \end{tikzpicture}
-\end{center}
+%% \begin{tikzpicture}[grow=right]
+%% \node{}
+%%     child {
+%%        	node[label=right:{Tails: Lose \$1}] {}
+%%         edge from parent
+%%         node[below] {\footnotesize $\frac{1}{2}$}
+%%     }
+%%     child {
+%%        	node[label=right:{Heads: Win \$0.99}] {}
+%%         edge from parent
+%%         node[above] {\footnotesize $\frac{1}{2}$}
+%%     };
+%%   \end{tikzpicture}
+%% \end{center}
 
 We can now compute the expected value:
 \begin{align*}
@@ -156,3 +156,5 @@ Determine the expected value of the following game: You flip a fair coin. If it 
     \end{hint}
   \end{solution}
 \end{question}
+
+\end{document}
