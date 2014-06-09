@@ -1,0 +1,143 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{Optimization}
+
+\begin{document}
+
+\begin{abstract}
+We minimize or maximize various quantities.
+\end{abstract}
+\maketitle
+
+\subsection*{Basic learning objectives}
+
+These are the tasks you should be able to perform with reasonable fluency \textbf{when you arrive at our next class meeting}. Important new vocabulary words are indicated \emph{in italics}. 
+
+\begin{itemize}
+	\item Use Wolfram Alpha or Desmos to solve equations.
+    \item Memorize the basic formulas for area and volume.
+\end{itemize}
+
+\subsection*{Advanced learning objectives}
+
+In addition to mastering the basic objectives, here are the tasks you should be able to perform \textbf{after class, with practice}: 
+
+\begin{itemize}
+	\item Find the formula for an function that we want to minimize or maximize.
+    \item Be able to find a maximum or minimum value of a curve.
+    \item State the conclusion to the optimization problem as a complete, descriptive sentence.
+\end{itemize}
+
+\noindent\hrulefill
+
+We have used many web tools to help us in our computations for this course. In this unit we are using \link{http://wolframalpha.com} and \link{http://desmos.com} to serve as graphing calculators for us. 
+
+In this section we are trying to optimize various functions. When we say the word ``optimize'' we mean that we are trying to find the minimum or maximum output values of the function. For example, we might want to minimize costs or maximize profit.
+
+First we want to show/remind you how useful \link{http://wolframalpha.com} is at solving equations.
+
+\begin{question}
+Find the number of solutions to the system of equations:
+\[
+\begin{cases}
+y&=x^3-4x\\
+y&=x
+\end{cases}
+\]
+\begin{solution}
+The system has \answer{3} solutions
+\begin{hint}
+Either plot it in Desmos and count the number of intersection points or just type in both equations to wolfram alpha.
+\end{hint}
+\end{solution}
+\end{question}
+
+
+
+\begin{question}
+Find the of solutions to the system of equations:
+\[
+\begin{cases}
+y&=x^3-9x\\
+y&=-2x+6
+\end{cases}
+\]
+\begin{solution}
+There are $3$ solutions. 
+When $x=-2$, $y=$ \answer{10}
+When $x=-1$, $y=$ \answer{8}
+When $x=3$, $y=$ \answer{0}
+
+\begin{hint}
+Either plot it in Desmos and count the number of intersection points or just type in both equations to wolfram alpha.
+\end{hint}
+\end{solution}
+\end{question}
+
+Both Wolfram Alpha and Desmos have the ability to help us find the minimum or maximum value(s) of curves. 
+
+\begin{question}
+Find the $y$-coordinate of the highest point on the curve $y=4x^3-x^4$. 
+
+In \link{\http://wolframalpha.com} you can  get the answer by entering \verb|maximize 4x^3-x^4|. In \link{http:desmos.com} you can define the curve $y=4x^3-x^4$. Then (with that cell still selected) you can click on the point at the top of the curve to get its coordinates.
+
+\begin{solution}
+The maximum $y$ value is $y=$ \answer{$27$}.
+\end{solution}
+\end{question}
+
+
+
+\begin{question}
+In this problem we consider the problem of creating a box by taking a $\SI{6}{in}\times\SI{8}{in}$ sheet and cutting out square corners and folding up the sides as pictured below.
+\begin{image}
+\begin{tikzpicture}[line width=1pt]
+\draw (-2,-1) rectangle (2,1) (-2,-2) rectangle (2,2) (-3,-1) rectangle (3,1);
+\draw[style=dashed] (-3,-1) --node[left]{$x$}(-3,-2) --node[below]{$x$} (-2,-2);
+\draw[style=dashed] (3,-1) --node[right]{$x$}(3,-2) --node[below]{$x$} (2,-2);
+\draw[style=dashed] (-3,1) --node[left]{$x$}(-3,2) --node[above]{$x$} (-2,2);
+\draw[style=dashed] (3,1) --node[right]{$x$}(3,2) --node[above]{$x$} (2,2);
+\draw[|-|] (-3.5,-2) --node[fill=white]{$6$} (-3.5,2);
+\draw[|-|] (-3,-2.5) --node[fill=white]{$8$} (3,-2.5);
+\end{tikzpicture}
+\end{image}
+\begin{solution}
+We will ignore the units for much of the calculation, but we need to put them back in at the end. The length of the sheet is $8$ so the length of the box (after we have removed the corners) is \answer{$8-2x$}.
+\begin{hint}
+When the box is folded it looks like
+\begin{image}
+\begin{tikzpicture}[line width=1pt,scale=.5]
+\draw (0,0,0) -- (8,0,0) --node[right]{$x$} (8,2,0) -- (0,2,0) -- cycle;
+\draw (0,0,4) --node[below]{$8-2x$} (8,0,4) -- (8,2,4) -- (0,2,4) -- cycle;
+\draw (0,0,0) -- (0,0,4) (8,0,0) --node[right]{$6-2x$}(8,0,4) (8,2,0) -- (8,2,4) (0,2,0) -- (0,2,4);
+\end{tikzpicture}
+\end{image}
+\end{hint}
+The width of the sheet is $6$ so the width of the box is \answer{$6-2x$}. The height of the box is \answer{$x$}.
+
+The volume of the box is given by the formula $V(x)=$ \answer{$x(8-2x)(6-2x)$}.
+
+Now go to \link{http://wolframalpha.com} and enter \texttt{maximize x(8-2x)(6-2x)} to find the value of $x$ that maximizes the volume. 
+
+Alternatively, use the function $V(x)=x(8-2x)(6-2x)$ in \link{http://desmos.com} and click the dot at the top of the hump of the curve to see the coordinates of the point at that maximum value.
+
+The side length of each corner square is  $x=$ \answer{$1.13$} inches.
+\end{solution}
+\end{question}
+
+
+
+
+
+
+\end{document}
