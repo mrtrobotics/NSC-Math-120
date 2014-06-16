@@ -1,0 +1,41 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{Prior Distributions}
+
+\begin{document}
+\begin{abstract}
+We learn how knowing information in advance can help us to identify fraudulent data.
+\end{abstract}
+\maketitle
+
+When using real-world data, we often have past data that can be used as a reference point for making observations about new data. Specifically, this can be used to detect fraud.
+
+Benford's Law is one type of distribution. Benford's Law applies to the first digit of randomly generated data as long as that data spans a very wide range of values. In this context, randomly generated data simply means information in the world that has no particular reason to cluster together. The following video explains Benford's Law: \link{https://www.youtube.com/watch?v=XXjlR2OK1kM}.
+
+\begin{question}
+When looking at data that conforms to Benford's law, which of the following digits will be the most common leading digit?
+  \begin{solution}
+    \begin{multiple-choice}
+      \choice[correct]{4}
+      \choice{7}
+      \choice{9}
+    \end{multiple-choice}
+    \begin{hint}
+      Think about the raffle ticket example from the video, starting around 3:30.
+    \end{hint}
+  \end{solution}
+\end{question}
+
+This type of analysis is used very often in forensic accounting. Within larger organizations, numbers corresponding to things like inventory or the value of purchase orders tend to span a wide range of values and data points are not subject to clustering. This process can be very complex and technical in practice, so we will use a simpler example in class to demonstrate how this type process can accurately identify fraud.
+
+\end{document}

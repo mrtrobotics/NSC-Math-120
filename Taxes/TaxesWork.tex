@@ -1,0 +1,84 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{Taxes}
+
+\begin{document}
+\begin{abstract}
+
+\end{abstract}
+\maketitle
+\begin{quote}
+Our new Constitution is now established, and has an appearance that promises permanency; but in this world nothing can be said to be certain, except death and taxes. --- Benjamin Franklin, 1789
+\end{quote}
+
+Taxes, in some form or another, are familiar to all of us. Local, state, and federal government agencies all levy taxes of various types and most have taken pains to ensure that collection of taxes is automatic, meaning that the calculations involved in taxation are often hidden from view.
+
+Some taxes are simple percentage rates, such as most sales tax. The 2014 sales tax rate in Henderson is 8.1\%, meaning that for every \$100 in taxable purchases an additional \$8.10 is collected in tax.
+
+Other taxes, like income tax, combine percentage calculations with more complicated delineations of income into brackets. For example, a single taxpayer with \$25,000 in taxable income will be charged a federal tax rate of 10\% while for an equivalent filer with \$125,000 in taxable income the rate of taxation is 28\%.
+
+Still other taxes involve more complicated computations involving a wide variety of factors. 
+
+A subsidy can be thought of as a negative tax --- money is paid from the government to an entity for a particular economic, social, or political purpose. For example, during the Great Depression food prices dropped considerably because of farms producing more crop than the market demanded. This resulted in a large number of farmers falling into poverty and defaulting on their farm (and home!) loans. To counteract this, Congress passed the Agriculture Adjustment Act in 1933 that offered farmers money for \emph{not} growing certain crops. This money offset the farmers' debt and reduced the quantity of certain crops, leading to an increase in food prices that further benefited farming communitities.
+
+The practice of offering subsidies, including for agriculture, continues in large measure today despite substantial controversy surrounding the practice.
+
+A tariff is a type of tax that is levied on goods produced in one location and sold in another location, such as imported or exported goods. Tariffs are sometimes imposed so that goods manufactured cheaply in another part of the world cost the same as or more than goods produced in another part of the world. This is done so that the more expensively produced goods are not undersold by foreign competitors' goods.
+
+\begin{question}
+Suppose that when a consumer in coastal California is faced with purchasing either of two lightbulbs that differ in price by $\$d$, the probability they will buy the cheaper lightbulb is $\dfrac{1}{1+2^{-4d}}$. For example, if one lightbulb is \$0.50 more than the other, the consumer will purchase the cheaper lightbulb $\dfrac{1}{1+2^{-4\times 0.50}}=0.8=80\%$ of the time.
+If consumers in coastal California buy 1,500,000 lightbulbs in a given month and one of them is \$0.10 more expensive than the other, about how many of the cheaper lightbulbs will be bought?
+
+\begin{solution}
+ \begin{multiple-choice}
+    	\choice[correct]{850 thousand}
+        \choice{750 thousand}
+        \choice{700 thousand}
+        \choice{1 million}
+        \choice{500 thousand million}
+    \end{multiple-choice}
+\begin{hint}
+Evaluate $\dfrac{1}{1+2^{-4\times 0.10}}$.
+\end{hint}
+\begin{hint}
+How many lightbulbs, out of 1,500,000 does $\dfrac{1}{1+2^{-4\times 0.10}}$ represent?
+\end{hint}
+\end{solution}
+\end{question}
+
+\begin{question}
+Tom operates a lightbulb factory in coastal California. The costs associated with the factory are such that Tom must sell \$1,000,000 worth of lightbulbs per month to break even. Javier operates a similar factory in rural Nevada. The costs of business are lower for Javier than Tom; Javier can break even by selling \$800,000 worth of lightbulbs per month.
+
+Suppose Javier prices his lightbulbs at \$0.80 each and ships them to coastal California for an additional \$0.05 per lightbulb, where Tom's are currently priced at \$1.00 each. In response to the cheap lightbulbs, authoritites in coastal California put a tariff of \$0.45 each on Javier's lightbulbs. If customers buy 1,500,000 lightbulbs per month, what will be the outcome of the tarrif on Tom's business? (Assume that Tom's and Javier's lightbulbs are the only lightbulbs for sale.)
+
+\begin{solution}
+\begin{multiple-choice}
+    	\choice{Tom will make a large profit (over \$100,000/month)}
+        \choice[correct]{Tom will make a small profit (under \$100,000/month)}
+        \choice{Tom will break even}
+        \choice{Tom will suffer a small loss (less than \$100,000/month)}
+        \choice{Tom will suffer a large loss (more than \$100,000/month)}
+    \end{multiple-choice}
+\begin{hint}
+What will the total price of Javier's imported lightbulbs be, including his \$0.80 cost, shipping charges, and the tariff?
+\end{hint}
+\begin{hint}
+Given the price of the lightbulbs, use $\dfrac{1}{1+2^{-4d}}$ to find out how likely a customer is to buy Tom's lightbulbs.
+\end{hint}
+\begin{hint}
+How many of Tom's lightbulbs will the consumers purchase at the price of \$1.00 each?
+\end{hint}
+\end{solution}
+\end{question}
+
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass{ximera}
+%% handout
+%% nohints
+%% space
+%% newpage
+%% numbers
+
+\input{preamble.tex} %% we can turn off input when making a master document
+
+\prerequisites{none}
+\outcomes{ximeraLatex}
+
+\title{Prior Distributions}
+
+\begin{document}
+\begin{abstract}
+We discuss the limits of statistically-based inferences.
+\end{abstract}
+\maketitle
+
+One of the difficulties of drawing conclusions based on statistics is that it is possible for rare random events to occur. In a problem you worked out previously, you found that the probability of flipping 10 heads in a row is $\frac{1}{1024}$. So for any particular person to get 10 heads in 10 tries is quite rare. But if you had 1024 people running this experiment, you would not be surprised if you found someone with that outcome.
+
+So the mere fact that someone claims to have flipped 10 heads in a row is not sufficient to make a meaningful accusation that the person faked the data. We need to think about things in a broader context.
+
+When making statistically-based inferences, there are two features which help make stronger cases that an event is not the result of chance:
+\begin{itemize}
+  \item The size of the sample set: If you flip a coin twice and got heads twice, that's not enough to be concerned that there may be something wrong with the coin. If you flip a coin a hundred times and get heads every single time, then you have a lot of reason to question the coin.
+  \item The number of samples obtained: The more samples you take, the more likely it is that you will see a data point that appears in unlikely places. For example, if there is only a 1\% chance of an event, and you've taken thousands of samples, you should not be surprised to see many events in that 1\% category. So as you look at more types of events, you need to increase your standards for what becomes a meaningful observation. (This is sometimes referred to as the ``look-elsewhere effect.'')
+\end{itemize}
+
+\begin{question}
+A person wants to find out whether people with psychic powers exist by having people predict future events. He announces that he will build an urn that contains three colored balls, and he will draw from 15 times with replacement. If someone predicts the picks correctly, he will certify that person as a true psychic. Based on this measure, if each of the 7 billion people on earth participated, how many true psychics would we expect him to certify?
+  \begin{solution}
+    \begin{multiple-choice}
+      \choice{None. Psychic powers don't exist.}
+      \choice{About 100.}
+      \choice[correct]{About 500.}
+      \choice{About 1,000.}
+      \choice{About 10,000.}
+    \end{multiple-choice}
+  \end{solution}
+\end{question}
+
+\begin{question}
+The homework included an assignment where you were to make two lists of 75 random coin tosses. In one list, you were supposed to make it up off the top of your head. And in the other list, you were supposed to actually flip a coin 75 times and record the results. We will need this for the upcoming class. Did you do this assignment? 
+  \begin{solution}
+    \begin{multiple-choice}
+      \choice[correct]{Yes}
+      \choice{No}
+    \end{multiple-choice}
+  \end{solution}
+\end{question}
+
+
+\end{document}
