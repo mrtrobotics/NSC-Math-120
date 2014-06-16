@@ -9,10 +9,13 @@ Percentages/Percentages
 Interest/Interest
   Interest/InterestWork
 Credit/Credit
-Mortgage/Mortgage
-  Mortgage/MortgageWork
+  Credit/CreditWork
 Insurance/Insurance
   Insurance/InsuranceWork
+Taxes/Taxes
+  Taxes/TaxesWork
+Mortgage/Mortgage
+  Mortgage/MortgageWork
 BasicProb/BasicProb
   BasicProb/ProbabilityDefs
 DependentOrIndependent/DependentOrIndependent
@@ -20,19 +23,25 @@ ConditionalProbabilities/IntroToConditional
 ExpectedValue/ExpectedValue
 StatsIntro/StatsIntro
 NormalCurves/NormalCurves
+  NormalCurves/NormalGeogebra
+  NormalCurves/MuSigmaZ
+Fraud/Fraud
+  Fraud/CoinFraudExample
+  Fraud/Distributions
+  Fraud/Limitations
 IntroToFunctions/IntroToFunctions
-  IntroToFunctions/Functions/FunctionDefinition
-  IntroToFunctions/Functions/FunctionNotation
-  IntroToFunctions/Functions/VisualizingFunctions
+  IntroToFunctions/FunctionDefinition
+  IntroToFunctions/FunctionNotation
+  IntroToFunctions/VisualizingFunctions
 AlgebraOfFunctions/AlgebraOfFunctions
-  AlgebraOfFunctions/FunctionArithmetic/FunctionArithmetic
-  AlgebraOfFunctions/FunctionComposition/FunctionComposition
-  AlgebraOfFunctions/InverseFunctions/InverseFunctions
+  AlgebraOfFunctions/FunctionArithmetic
+  AlgebraOfFunctions/FunctionComposition
+  AlgebraOfFunctions/InverseFunctions
 ParentFunctions/ParentFunctions
 ParentFunctions2/ParentFunctions2
-  ParentFunctions2/MoreParentFunctions/WaveFunctions
-  ParentFunctions2/MoreParentFunctions/ExponentialFunctions
-  ParentFunctions2/MoreParentFunctions/Logarithms
+  ParentFunctions2/WaveFunctions
+  ParentFunctions2/ExponentialFunctions
+  ParentFunctions2/Logarithms
 Transformations/Transformations
 Modeling/Modeling
 Optimization/Optimization
