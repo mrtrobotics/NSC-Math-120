@@ -8,14 +8,6 @@ Percentages/Percentages
   Percentages/PercentagesWork
 Interest/Interest
   Interest/InterestWork
-Credit/Credit
-  Credit/CreditWork
-Insurance/Insurance
-  Insurance/InsuranceWork
-Taxes/Taxes
-  Taxes/TaxesWork
-Mortgage/Mortgage
-  Mortgage/MortgageWork
 BasicProb/BasicProb
   BasicProb/ProbabilityDefs
 DependentOrIndependent/DependentOrIndependent
@@ -29,6 +21,12 @@ Fraud/Fraud
   Fraud/CoinFraudExample
   Fraud/Distributions
   Fraud/Limitations
+Credit/Credit
+  Credit/CreditWork
+Insurance/Insurance
+  Insurance/InsuranceWork
+Taxes/Taxes
+  Taxes/TaxesWork
 IntroToFunctions/IntroToFunctions
   IntroToFunctions/FunctionDefinition
   IntroToFunctions/FunctionNotation
@@ -45,4 +43,9 @@ ParentFunctions2/ParentFunctions2
 Transformations/Transformations
 Modeling/Modeling
 Optimization/Optimization
+Mortgage/Mortgage
+  Mortgage/MortgageWork
+Inflation/Inflation
+  Inflation/InflationWork
+
 
