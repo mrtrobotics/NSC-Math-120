@@ -6,7 +6,6 @@
 %% numbers
 
 \prerequisites{none}
-\outcomes{ximeraLatex}
 
 \title{What is probability?}
 
@@ -22,14 +21,14 @@ An \emph{experiment} in probability theory is some repeatable procedure that wil
 
 If we roll a standard 6-sided die, there are six possible outcomes, which we will denote with the following notation:
 \[ \{ 1, 2, 3, 4, 5, 6 \} \]
-The list of all possible outcomes is known as the \emph{sample space} of an experiment. Notice that we have used curly brackets around the list and that the outcomes are separated by a comma. (This is known as a set.) The individual outcomes are known as the \emph{events}.
+The list of all possible outcomes is known as the \emph{sample space} of an experiment. Notice that we have used curly brackets around the list and that the outcomes are separated by a comma. (This is known as a set.) An \emph{event} is some collection of outcomes that are of interest. For example, the event ``Rolling an even number'' would be the collection of events $\{ 2, 4, 6\}$ and the event ``Rolling a 1'' would be the collection $\{ 1 \}$.
 
 If the die has not been tampered with, then all of the outcomes are \emph{equiprobable}, meaning that the chance of each number coming up is the same. In this case, there is a simple formula that we can use to determine the probability:
 \[ P(X) = \dfrac{ \text{ \# of successes }}{ \text{\# of possibilities } } \]
 
 In this formula, ``$P(X)$'' is read ``The probability of event $X$.'' The symbol $X$ represents a description of a type of event, so that $X$ could be phrases like ``rolling a 1'' or ``rolling an even number.''
 
-A \emph{success} simply means that the outcome of the experiment matches described event, and the \# of possibilities is simply a count of all of the possible outcomes of the experiment.
+A \emph{success} simply means that the outcome of the experiment matches the described event, and the \# of possibilities is simply a count of all of the possible outcomes of the experiment.
 
 Consider the following examples for the dice rolling experiment above:
 \begin{itemize}
@@ -39,14 +38,30 @@ Consider the following examples for the dice rolling experiment above:
 
 Sometimes we convert the fraction to a decimal or a percent, but there are many situations in which we leave it as a fraction. You will need to be able to work with all of these situations.
 
-Now let's consider an urn that contains 999 red balls and 1 black ball. The sample space for this experiment is $\{ \text{red}, \text{black} \}$. If we're not careful, this may make it look as if there are only two possible outcomes for the experiment. If that were true, then the probability of drawing a black ball and a red ball would be
-\[ P(\text{black}) = \dfrac{1}{2} = 50\% \hspace{15pt} \text{ and } \hspace{15pt} P(\text{red}) = \dfrac{1}{2} = 50\%. \]
-But intuitively, we know that the chance of drawing a red ball is much larger than the chance of drawing a black ball. What is going wrong?
+Now let's consider an urn that contains 999 red balls and 1 black ball. We may take the set $\{ \text{red}, \text{black} \}$ as our sample space for this experiment. 
 
-The mistake is that the sample space does not include any information of the probabilities themselves, just the outcomes. Drawing a red ball and drawing a black ball are not equiprobable. When we count the number of possible outcomes, we need to count each individual ball (so that there are 1000 possible outcomes) and not just the colors. Once we do this, we get numbers that match our expectations.
-\[ P(\text{black}) = \dfrac{1}{1000} = 0.1\% \hspace{15pt} \text{ and } \hspace{15pt} P(\text{red}) = \dfrac{999}{1000} = 99.9\%. \]
+\begin{question}
+Find $P(\text{``Choosing Black''})$.
+  \begin{solution}
+    \begin{multiple-choice}
+      \choice{$1/2$}
+      \choice[correct]{$1/1000$}
+      \end{multiple-choice}
+    \begin{hint}
+    The two possible outcomes are not equally likely, so $P(\text{``Choosing Black''})\ne\frac{\text{\# of Black}}{\text{\# of Outcomes}}$.
+    \end{hint}
+  \end{solution}
+\end{question}
 
-And this explains why not every event is 50-50.
+The formula $P(\text{``Choosing Black''})=\frac{\text{\# of Black}}{\text{\# of Outcomes}}$ only works when the outcomes are equally likely. 
+Intuitively, we know that the chance of drawing a red ball is much larger than the chance of drawing a black ball. 
+
+One way to get outcomes that are equally likely would be to label the red balls $R_1,R_2,\ldots, R_{999}$ and the black ball $B$. Then a natural sample space is $\{R_1,R_2,\ldots,R_{999},B\}$. Now each event is equally likely, so we can use the formula 
+\[
+P(\text{``Choosing Black''})=\frac{\text{\# of Black}}{\text{\# of Balls}}=\frac{1}{1000}.
+\]
+
+And this illustrates why not every event is 50-50.
 
 %%% VIDEO: Two sample problems
 

@@ -8,7 +8,7 @@
 \input{preamble.tex} %% we can turn off input when making a master document
 
 \prerequisites{none}
-\outcomes{ximeraLatex}
+
 
 \title{Function Composition}
 
@@ -41,6 +41,8 @@ g(f(x))=g(x^2-2)=[x^2-2]+3=x^2+1.
 \]
 We replaced $f(x)$ with $x^2-2$ and then evaluated $g(x)$.
 
+Another example of function composition can be seen at: \youtube{https://www.youtube.com/watch?v=ySGVaPYJCp0}
+
 \begin{question}
 Let $f(x)=2-x$ and $g(x)=x^2+2x$. Then
 $f(g(x))=$ \answer{$2-x^2-2x$}.
@@ -52,11 +54,11 @@ $f(g(x))=f(x^2+2x)$.
 \end{question}
 
 
-Suppose $s(x)$ is the function that gives you your speed while traveling to work when you eat $x$ bowls of oatmeal. Let $T(s)$ be the function that tells how long it takes to get to work when traveling at speed, $s$. Then $T(s(x))$ is the function that outputs the time to get to work when you eat $x$ bowls of oatmeal.
+Suppose $s(x)$ is the function that gives you your speed while biking to work when you eat $x$ bowls of oatmeal. Let $T(s)$ be the function that tells how long it takes to get to work when traveling at speed, $s$. Then $T(s(x))$ is the function that outputs the time to bike to work when you eat $x$ bowls of oatmeal.
 
 
 \begin{question}
-Let $m$ be the level of traffic at the time of day $t$. $m$ depends of $t$ so we can write it $m(t)$ for $m$.
+Let $m$ be the level of traffic at the time of day $t$. $m$ depends on $t$, so we can write $m(t)$ for $m$.
 
 Let $W$ be the time it takes to get a work. $W$ depends on $m$, so we can write $W(m)$ for $W$.
 

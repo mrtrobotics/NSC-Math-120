@@ -1,3 +1,4 @@
+
 \documentclass{ximera}
 %% handout
 %% nohints
@@ -9,7 +10,6 @@
 
 
 \prerequisites{none}
-\outcomes{ximeraLatex}
 
 \title{Conditional Probability}
 
@@ -39,8 +39,10 @@ In addition to mastering the basic objectives, here are the tasks you should be 
 
 \noindent\hrulefill
 
-When working with probabilities, we sometimes want to make certain types of restrictions to our sample space. This can sometimes lead to interesting situations that are not intuitive. A conditional probability is a probability calculation in which there is a restriction on the sample space. The notation for conditional probabilities is the following:
-\[ P(X | Y) = \text{``The probability that event $X$ occurs \emph{given than} event $Y$ occurred.''} \]
+When working with probabilities, we sometimes want to make certain types of restrictions to our sample space. For example, asking what the probability is that a person will make a 3-point basketball shot is different than asking what the probability is that a professional basketball player will make a 3-point shot. The restriction that the person is a professioinal basketball player restricts the sample space. This could be phrased as, ``What is the probabilith that a person will make a 3-point shot \emph{given that} the person is a professional basketball player?''
+
+Restricting the sample space can sometimes lead to interesting situations that are not intuitive. A \emph{conditional probability} is a probability with a restriction on the sample space. The notation for conditional probabilities is the following:
+\[ P(X | Y) = \text{``The probability that event $X$ occurs given that event $Y$ occurred.''} \]
 In the case that all events are equiprobable, we can use a formula that is similar to the one we used for basic probabilities (which we will repeat here for reference).
 \begin{align*}
   P(X) & = \dfrac{ \text{ \# of successes (for $X$)}}{ \text{\# of possibilities } } \\ \\
@@ -95,7 +97,7 @@ We will remove the blackened combinations because we are not interested in them 
 };
 \end{tikzpicture}
 \end{image}
-We can see that there are 7 combinations that contain a 3 and a total of 26 combinations that met the condition. This means that the probability is $\frac{7}{26} \approx 26.9\%$. (For comparison, the probability of rolling a 3 when rolling two dice is $\frac{11}{36} \approx 30.6\%$.)
+We can see that there are 7 combinations that contain a 3 and a total of 26 combinations that met the condition. This means that the probability is $\frac{7}{26} \approx 26.9\%$. (For comparison, the probability of rolling a 3 when rolling two dice without the restriction is $\frac{11}{36} \approx 30.6\%$.)
 
 This may not seem that complicated, but the next video will show some highly non-intuitive results that happen with conditional probabilities. Consider the following question: A man has two children. At least one of those children is a boy. What is the probability that the other child is also a boy? (Think for a moment!)
 

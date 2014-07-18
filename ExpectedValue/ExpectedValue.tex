@@ -5,10 +5,9 @@
 %% newpage
 %% numbers
 
-\input{preamble.tex} %% we can turn off input when making a master document
+\input{../preamble.tex}
 
 \prerequisites{none}
-\outcomes{ximeraLatex}
 
 \title{Expected value}
 
@@ -55,6 +54,8 @@ Up to think point, we've really only been talking about probabilities. But when 
 
 For example, if the expected value of a game is \$1, then you expect to win \$1 \emph{on average}. This doesn't mean that you will win \$1 every single time, and it may turn out that it's impossible for you to win exactly \$1. But if you play the game many times and average the results, you expect to average a \$1 win for each game.
 
+INSERT-EXAMPLE-VIDEO-HERE
+
 The formula for expected value looks complicated, but it's not that bad:
 \[ E[X] = \sum P(X_i) \cdot V(X_i). \]
 What does this mean?
@@ -68,9 +69,9 @@ What does this mean?
 
 That's a lot of notation to take in, but after working through an example, it will make more sense. We will compute the expected value of the second game above (where you only win \$0.99 when you win).
 
-For this game, we have the following events:
+For this game, $i$ takes on only $2$ values beause we have the following events:
 \[ \begin{array}{cc}
-      X_1 = ``\text{H}'' & X_2 = ``\text{T}'' 
+      X_1 = \text{``H''} & X_2 = \text{``T''} 
 \end{array} \]
 Since we know the coin is fair, we know the probability of each event is the same:
 \[ \begin{array}{cc}
