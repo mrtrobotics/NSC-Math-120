@@ -35,7 +35,7 @@ In addition to mastering the basic objectives, here are the tasks you should be 
 \begin{itemize}
 	\item Use a curve fitted to a table of values to extrapolate values of a function.
     \item Be able to recognize whether a model is a good fit.
-    \item Use \link{http:\\wolframalpha.com} and \link{http:\\desmos.com} to find curves that fit data.
+    \item Use \link{http://wolframalpha.com} and \link{http://desmos.com} to find curves that fit data.
 \end{itemize}
 
 \noindent\hrulefill
@@ -45,52 +45,59 @@ In this section we create a model by fitting a curve to data. Then we will use o
 Suppose we are given the function values 
 \begin{center} 
     \begin{tabular}{llllllll}
-    $x$  & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
-    $f(x)$ & 0 & 1 & 0 & 1 & 0 & 1 & 0 \\
+    $x$  & $0$ & $1$ & $2$ & $3$ & $4$ & $5$ & $6$ \\ \hline
+    $f(x)$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ \\
     \end{tabular}
 \end{center}
-Open up \link{desmos.com} and create a table containing the data points. A curve that that includes those points must go up and down fairly regularly, so we might try to model the curve with a wave function.
+Open up \link{http://desmos.com} and create a table containing the data points. A curve that that includes those points must go up and down fairly regularly, so we might try to model the curve with a wave function.
 
 Our first guess is $f(x)=\cos(x)$ which we plot in Desmos. It doesn't work quite right, so we change the function to be $f(x)=a\cos(bx+c)+d$ and create sliders for $a$, $b$, $c$, and $d$. (Follow along by creating this function in Desmos yourself. Otherwise it won't mean anything to you.)
 
 
-Our function is twice as tall as it needs to be so we set $a=.5$. The graph needs to be shifted vertically, so that its center line is at $.5$ so we set $d=.5$. Our function is too wide so we set $b=2$ or $b=3$ to make it narrower. In fact if we play with it for a minute we might decide $b=\pi$ is a good value. Then we shift things horizontally, and find that $c=\pi$ is a good choice.
+Our function is twice as tall as it needs to be so we set $a=0.5$. The graph needs to be shifted vertically, so that its center line is at $0.5$ so we set $d=0.5$. Our function is too wide so we set $b=2$ or $b=3$ to make it narrower. In fact if we play with it for a minute we might decide $b=\pi$ is a good value. Then we shift things horizontally, and find that $c=\pi$ is a good choice.
 
-Thus our model is $f(x)=.5\cos(\pi x+\pi)+.5$. Perhaps another student would have come up with $f(x)=-.5\cos(\pi x)+.5$, which happens to be the same curve. 
+Thus our model is $f(x)=0.5\cos(\pi x+\pi)+0.5$. Perhaps another student would have come up with $f(x)=-0.5\cos(\pi x)+0.5$, which happens to be the same curve. 
 
 Is our model a good one? Probably. However, there are many other curves that fit the data.
 
 \begin{question}
-Which functions below do not fit the data for the function $f(x)$ that we have been discussing? (Please don't just guess. You won't learn anything that way.)
-  \begin{solution}
-    \begin{multiple-choice}
+Which functions below do not fit the data for the function $f(x)$? (Please don't just guess. You won't learn anything that way.)
+
+\begin{center} 
+    \begin{tabular}{llllllll}
+    $x$  & $0$ & $1$ & $2$ & $3$ & $4$ & $5$ & $6$ \\ \hline
+    $y=f(x)$ & $0$ & $1$ & $0$ & $1$ & $0$ & $1$ & $0$ \\
+    \end{tabular}
+\end{center}
+
+    \begin{multipleChoice}
       \choice{$y=\left(\sin(\frac{3\pi}{2}(x))\right)^2$}
       \choice{$y=\big|\left|\mathrm{mod} \left(x-1,2\right)\right|-1\big|$}
       \choice{$y=\left|\sin \left(\frac{\pi x}{2}\right)\right|$}
-      \choice{$y=\sin \left(2\pi x\right)-.5\cos \left(\pi x\right)+.5$}
+      \choice{$y=\sin \left(2\pi x\right)-0.5\cos \left(\pi x\right)+0.5$}
       \choice[correct]{$y=\frac{\sin \left(\pi x\right)}{\cos \left(\pi \space x\right)+2}$}
       \choice{$y=\sin \left(\pi \left(x-2.5y\right)\right)$}
-    \end{multiple-choice}
+    \end{multipleChoice}
     \begin{hint}
-    Enter each equation into Desmos. Be careful. 
+    Enter each equation into Desmos. Be careful. You don't need to understand these functions. The purpose of this example is just to show that there might be many curves that fit a single set of data.
     \end{hint}
     \begin{hint}
     You can use \verb|abs(x)| in place of \verb+|x|+ if you are struggling with the absolute value expressions. 
     \end{hint}
-  \end{solution}
+
 \end{question}
 
 \begin{question}
 Plot the data in the table
 \begin{center}
 \begin{tabular}{llllllll}
-    $x$  & 0 & 1 & 2 & 3  & 4   & 5    & 6   \\ \hline
-    $f(x)$ & 3 & 7 & 3 & -9 & -29 & -57 & -93 \\
+    $x$  & $0$ & $1$ & $2$ & $3$  & $4$   & $5$    & $6$   \\ \hline
+    $f(x)$ & $3$ & $7$ & $3$ & $-9$ & $-29$ & $-57$ & $-93$ \\
 \end{tabular}
 \end{center} 
 What is the parent function for the function $f(x)$?
-\begin{solution}
-\begin{multiple-choice}
+
+\begin{multipleChoice}
       \choice[correct]{$y=x^2$}
       \choice{$y=x$}
       \choice{$y=x^3$}
@@ -98,12 +105,15 @@ What is the parent function for the function $f(x)$?
       \choice{$y=\sin(x)$}
       \choice{$y=2^x$}
       \choice{$y=\log(x)$}
-\end{multiple-choice}
-The formula of the function $f(x)$ is $f(x)=$ \answer{$-4x^2+8x+3$}.
+\end{multipleChoice}
+The formula of the function $f(x)$ is of the form $f(x)=ax^2+bx+c$ for some values $a$, $b$, and $c$. The exact formula $f(x)=$ \answer{-4x^2+8x+3}.
 \begin{hint}
-The coefficients are all integers.
+The values of $a$, $b$, and $c$ are integers.
 \end{hint}
-\end{solution}
+
+\begin{hint}
+Go to \link{http://desmos.com} and create the function $f(x)=ax^2+bx+c$ and use the sliders for $a$, $b$, and $c$ to pinpoint the exact values.
+\end{hint}
 
 \end{question}
 
@@ -111,10 +121,10 @@ The coefficients are all integers.
 
 
 \begin{question}
-Go to \link{https://student.desmos.com} and enter the code \verb|vrt3|. Use your real name, and complete the activity (about 15 minutes.) We will discuss it in class.
-\begin{solution}
+Go to \link{https://student.desmos.com} and enter the code \verb|vrt3|. Use your real name, and complete the activity (about $15$ minutes.) We will discuss it in class.
+
 The number of pennies in the big circle was \answer{663}.
-\end{solution}
+
 \end{question}
 
 

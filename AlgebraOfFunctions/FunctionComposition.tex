@@ -33,29 +33,27 @@ For example if $f(x)=x^2-2$ and $g(x)=x+3$ then
 \[
 f(g(x))=f(x+3)=(x+3)^2-2.
 \]
-Note that we replaced $g(x)$ with $x+3$ and then evaluated $f(x)$.
+Note that we replaced $g(x)$ with $x+3$ and then evaluated $f$.
 
 For the same two functions
 \[
 g(f(x))=g(x^2-2)=[x^2-2]+3=x^2+1.
 \]
-We replaced $f(x)$ with $x^2-2$ and then evaluated $g(x)$.
+We replaced $f(x)$ with $x^2-2$ and then evaluated $g$.
 
 Another example of function composition can be seen at: \youtube{https://www.youtube.com/watch?v=ySGVaPYJCp0}
 
 \begin{question}
 Let $f(x)=2-x$ and $g(x)=x^2+2x$. Then
-$f(g(x))=$ \answer{$2-x^2-2x$}.
-\begin{solution}
+$f(g(x))=$ \answer{2-x^2-2x}.
+
 \begin{hint}
 $f(g(x))=f(x^2+2x)$.
 \end{hint}
-\end{solution}
+
 \end{question}
 
-
-Suppose $s(x)$ is the function that gives you your speed while biking to work when you eat $x$ bowls of oatmeal. Let $T(s)$ be the function that tells how long it takes to get to work when traveling at speed, $s$. Then $T(s(x))$ is the function that outputs the time to bike to work when you eat $x$ bowls of oatmeal.
-
+Suppose $M(g)$ is the function that tells how far your car will go given $g$ gallons of gas. Let $g(x)$ be the function that gives the number of gallons that can be purchased for $x$ dollars. Then $M(g(x))$ is the function that outputs how far your car can travel when you spend $x$ dollars on gas. 
 
 \begin{question}
 Let $m$ be the level of traffic at the time of day $t$. $m$ depends on $t$, so we can write $m(t)$ for $m$.
@@ -63,19 +61,19 @@ Let $m$ be the level of traffic at the time of day $t$. $m$ depends on $t$, so w
 Let $W$ be the time it takes to get a work. $W$ depends on $m$, so we can write $W(m)$ for $W$.
 
 What does the function $W(m(t))$ represent?
-\begin{solution}
-\begin{multiple-choice}
+
+\begin{multipleChoice}
 \choice{---the total traffic on your way to work at time $t$}
 \choice{---the time of day when the traffic is heaviest}
 \choice[correct]{---the total time it takes to get to work at time $t$}
 \choice{---the traffic at time $t$}
-\end{multiple-choice}
+\end{multipleChoice}
 \begin{hint}
 Note that you are inputting time $t$ and outputting travel time $W$. 
 \end{hint}
 
 Note that the composition doesn't make sense in the reverse direction. We can't consider $m(W(t))$ because $W$ doesn't accept time as an input. It accepts traffic levels as input.
-\end{solution}
+
 \end{question}
 
 
