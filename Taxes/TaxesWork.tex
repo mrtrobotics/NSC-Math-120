@@ -42,9 +42,9 @@ Suppose that when consumers are faced with purchasing either of two light-bulbs 
 \begin{image}
 \begin{tikzpicture}[>=stealth,scale=1.5,samples=200,smooth]
 \begin{axis}
-[xlabel={Difference between products' prices},ylabel={\% that buy cheaper product},xmin=0,xmax=1,ymin=0,ymax=1,xtick={0,0.25,0.5,0.75,1},xticklabels={0\textcent,25\textcent,50\textcent,75\textcent,\$1.00},ytick={0,0.2,0.4,0.6,0.8,1},yticklabels={0\%,20\%,40\%,60\%,80\%,100\%},grid=major]
+[xlabel={Difference between products' prices},ylabel={\% that buy cheaper product},xmin=0,xmax=1,ymin=0,ymax=1,xtick={0,0.25,0.5,0.75,1},xticklabels={0\cent,25\cent,50\cent,75\cent,\$1.00},ytick={0,0.2,0.4,0.6,0.8,1},yticklabels={0\%,20\%,40\%,60\%,80\%,100\%},grid=major]
 \addplot[color=blue,ultra thick]{1/(1+2^(-4*x))};
-\addplot[fill=red,nodes near coords=\emph{(50\textcent, 80\%)},every node near coord/.style={anchor=335}] (0.5,0.8) circle (0.015);
+\addplot[fill=red,nodes near coords=\emph{(50\cent, 80\%)},every node near coord/.style={anchor=335}] (0.5,0.8) circle (0.015);
 \end{axis}
 \end{tikzpicture}
 \end{image}
