@@ -52,9 +52,7 @@ Something about this should feel unfair. The unfairness doesn't have anything to
 
 Up to think point, we've really only been talking about probabilities. But when you include some form of score-keeping like money, the problem becomes more complicated. This added feature leads us to the concept of \emph{expected value}. The expected value of a game is how much you expect to win or lose on average when playing the game once.
 
-For example, if the expected value of a game is \$1, then you expect to win \$1 \emph{on average}. This doesn't mean that you will win \$1 every single time, and it may turn out that it's impossible for you to win exactly \$1. But if you play the game many times and average the results, you expect to average a \$1 win for each game.
-
-INSERT-EXAMPLE-VIDEO-HERE
+For example, if the expected value of a game is \$$1$, then you expect to win \$$1$ \emph{on average}. This doesn't mean that you will win \$$1$ every single time, and it may turn out that it's impossible for you to win exactly \$$1$. But if you play the game many times and average the results, you expect to average a \$$1$ win for each game.
 
 The formula for expected value looks complicated, but it's not that bad:
 \[ E[X] = \sum P(X_i) \cdot V(X_i). \]
@@ -84,25 +82,23 @@ And we can read off the value of each event from the description of the game. No
 
 This information can be put into a probability tree. The values are listed at the end of the branches.
 
-\begin{center}
-
+\begin{image}
 \tikzstyle{level 1}=[level distance=2cm, sibling distance=1cm]
 \tikzstyle{level 2}=[level distance=2cm, sibling distance=.75cm]
-
 \begin{tikzpicture}[grow=right]
 \node{}
     child {
-       	node[label=right:{Tails: Lose \$1}] {}
+       	node[label=right:{Tails: Lose \$$1$}] {}
         edge from parent
         node[below] {\footnotesize $\frac{1}{2}$}
     }
     child {
-       	node[label=right:{Heads: Win \$0.99}] {}
+       	node[label=right:{Heads: Win \$$0.99$}] {}
         edge from parent
         node[above] {\footnotesize $\frac{1}{2}$}
     };
   \end{tikzpicture}
-\end{center}
+\end{image}
 
 We can now compute the expected value:
 \begin{align*}
@@ -113,8 +109,6 @@ We can now compute the expected value:
 \end{align*}
 
 What does this mean? It means that on average, each time you play this game you will lose half of a cent. This may not seem like much, but if you play this game over and over again, the casino will eventually have all of your money.
-
-%%% ANOTHER VIDEO EXAMPLE
 
 \begin{question}
 What is the expected value of a game?
@@ -143,11 +137,11 @@ The symbol $\sum$ represents which arithmetic operation?
 Determine the expected value of the following game: You flip a fair coin. If it comes up heads, you win \$100. If it comes up tails, you lose \$80.
 
     \begin{multipleChoice}
-      \choice{\$100}
-      \choice{-\$80}
-      \choice{\$20}
-      \choice[correct]{\$10}
-      \choice{-\$20}
+      \choice{\$$100$}
+      \choice{$-$\$$80$}
+      \choice{\$$20$}
+      \choice[correct]{\$$10$}
+      \choice{$-$\$$20$}
     \end{multipleChoice}
     \begin{hint}
       Draw the probability tree and label it like the example.
