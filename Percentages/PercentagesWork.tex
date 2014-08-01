@@ -5,12 +5,12 @@
 %% newpage
 %% numbers
 
-\input{preamble.tex} %% we can turn off input when making a master document
+\input{../preamble.tex} %% we can turn off input when making a master document
 
 \prerequisites{none}
 
 
-\title{Percentages Overview}
+\title{Percentages}
 
 \begin{document}
 \begin{abstract}
@@ -18,23 +18,82 @@ We review the concept of percentages.
 \end{abstract}
 \maketitle
 
-\subsection*{Basic learning objectives}
+The word \emph{percent} means ``for each hundred.'' For example, saying Joseph earns $60$\% as much as Elaine is saying he earns \$$60$ for each \$$100$ she earns.
 
-These are the tasks you should be able to perform with reasonable fluency \textbf{when you arrive at our next class meeting}. Important new vocabulary words are indicated \emph{in italics}. 
+To calculate a percentage, the relationship between the amount that constitutes the whole, called the \emph{reference amount} and the amount under consideration must be found. This is done via the following formula:
 
-\begin{itemize}
-	\item Know how to compute any one of the whole, part, or percentage of a quantity given the other two.
-\end{itemize}
+\begin{equation}\label{basicpercentage}
+\text{Percentage}=\frac{\text{Part}}{\text{Whole}}\times 100
+\end{equation}
 
-\subsection*{Advanced learning objectives}
 
-In addition to mastering the basic objectives, here are the tasks you should be able to perform \textbf{after class, with practice}: 
+As an example,
+\[
+\frac{15}{25}\times 100=60
+\]
+means that $15$ is $60\%$ of $25$.
 
-\begin{itemize}
-	\item Be able to explain the related notions of \emph{percent change}, \emph{percent increase}, and \emph{percent decrease}.
-	\item Understand the concept of a \emph{reference amount} and its impact on percentages.
-	\item Be able to correctly identify reference amounts in problems involving quantities that change multiple times.
-	\item Be able to compute percentages accurately with shifting reference amounts.
-\end{itemize}
+The relationship in equation (\ref{basicpercentage}) can be used to find any of the three pieces---the percentage, the part, the whole---if the other two are known by using algebra to solve for the missing piece.
+
+As an example, to find $70\%$ of $220$
+\begin{align*}
+70&=\frac{\text{Part}}{220}\times 100\\
+70\div 100 &=\frac{\text{Part}}{220}\\
+0.70\times 220 &=\text{Part}\\
+154&=\text{Part}
+\end{align*}
+and so $70\%$ of $220$ is $154$.
+
+\begin{question}
+The label on a $12$ oz.\ can of Coca-Cola states that it contains $39$ grams of carbohydrates, accounting for $13$\% of the recommended daily value. How many grams of carbohydrates are recommended daily?
+
+\begin{hint}
+$\displaystyle 13=\frac{39}{\emph{\text{Whole}}}\times 100$
+\end{hint}
+\answer{300} grams
+
+\end{question}
+
+
+\begin{question}
+For fiscal years $2013$--$2015$, the Nevada legislature appropriated $9.0\%$ of its $\$20.1$ billion budget to infrastructure. How many billions of dollars were appropriated for infrastructure? 	
+
+\begin{hint}
+\[9=\frac{\emph{\text{Part}}}{\$20.1\emph{\text{ billion}}}\times 100\]
+\end{hint}
+\begin{hint}
+If you use $\$20,100,000,000$ in your calculations, your answer will be in dollars. If you use $\$20.1$ in your calculations, your answer will be in billions of dollars.
+\end{hint}
+\begin{hint}
+Don't round your answer.
+\end{hint}
+\$\answer{1.809} billion
+
+\end{question}
+
+\begin{question}
+If my taxi fare is $\$25.50$ and I pay the driver $\$30$, what percent tip am I giving?
+
+    \begin{multipleChoice}
+    	\choice{$85\%$}
+        \choice{$20\%$}
+        \choice[correct]{$17.6\%$}
+        \choice{$15\%$}
+        \choice{$1.2\%$}
+    \end{multipleChoice}
+    \begin{hint}
+    What is the \emph{amount} of the tip? This is your \emph{part}.
+    \end{hint}
+    \begin{hint}
+   What is the amount of the basic fare? This is your \emph{whole}.
+    \end{hint}
+  	\begin{hint}
+    \[\emph{\text{Percentage}}=\frac{\emph{\text{Part}}}{\emph{\text{Whole}}}\times 100\]
+    \end{hint}
+
+\end{question}
+
+
+
 
 \end{document}
