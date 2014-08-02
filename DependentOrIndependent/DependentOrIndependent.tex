@@ -43,9 +43,7 @@ An easy way to determine whether two events are dependent or independent is to l
 For example, the following is the probability tree for drawing a ball from an urn containing two red balls, one white ball, and one blue ball, followed by flipping a biased coin.
 
 
-\begin{tikzpicture}[grow=right]
-\tikzstyle{level 1}=[level distance=2cm, sibling distance=2.5cm]
-\tikzstyle{level 2}=[level distance=2cm, sibling distance=.75cm]
+\begin{tikzpicture}[grow=right,level 1.style={level distance=2cm, sibling distance=2.5cm},level 2.style={level distance=2cm, sibling distance=.75cm}]
 \node{}
     child {
     	node[] {blue}
