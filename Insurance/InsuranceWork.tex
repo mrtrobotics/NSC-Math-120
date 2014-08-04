@@ -26,20 +26,21 @@ Insurance companies employ people skilled in a branch of applied mathematics kno
 We will examine simplified situations involving insurance to get a sense of the concepts and computations involved.
 
 In the mid-$17^\text{th}$ century, a London merchant named John Graunt collected and analyzed mortality rolls (lists of burials), originally kept to track the Plague, and published a short work entitled \textit{Natural and Political Observations Made upon the Bills of Mortality}. The most important idea in Graunt's work was the analysis of the distribution of lifespans for a group of people born at the same time. His London Life Table showed the percentage of people who would likely live to a given age at that time.\footnote{Burton, D.\ M.\ (2011). \textit{The history of mathematics: An introduction} (7th ed.). New York, NY: McGraw-Hill.}
-\begin{center}
-\begin{tabular}{@{}cc@{}}\toprule
-\textbf{Age} & \textbf{$\%$ of Survivors}\\\midrule
-$0$ & $100$\\
-$6$ & $64$\\
-$16$ & $40$\\
-$26$ & $25$\\
-$36$ & $16$\\
-$46$ & $10$\\
-$56$ & $6$\\
-$66$ & $3$\\
-$76$ & $1$\\\bottomrule
-\end{tabular}
-\end{center}
+\begin{image}
+\includegraphics{InsuranceTable1.png}
+%\begin{tabular}{@{}cc@{}}\toprule
+%\textbf{Age} & \textbf{$\%$ of Survivors}\\\midrule
+%$0$ & $100$\\
+%$6$ & $64$\\
+%$16$ & $40$\\
+%$26$ & $25$\\
+%$36$ & $16$\\
+%$46$ & $10$\\
+%$56$ & $6$\\
+%$66$ & $3$\\
+%$76$ & $1$\\\bottomrule
+%\end{tabular}
+\end{image}
 
 \begin{question}
 According to Graunt's London Life Table, what percentage of the population did not survive to age $16$?
@@ -69,14 +70,15 @@ Phoebe's neighborhood has been plagued by bicycle thefts. As a result, some bicy
 
 Using the above data, and the fact that her neighborhood contains 300 bicycles, half of which are unlocked, Phoebe creates the following table:
 
-\renewcommand{\arraystretch}{2}
 \begin{center}
-\begin{tabular}{@{}lcccccc@{}}
- & \# of bikes & $\times$ & proportion that will be stolen & $=$ & \# of thefts\\\midrule
-\textit{Unlocked} & $150$ & $\times$ & $\frac{1}{40}$ & $=$  & $3.75$\\
-\textit{Locked} & $150$ & $\times$ & $\frac{1}{100}$ & $=$ & $1.5$\\\bottomrule
-\textbf{Total} & & & & & \textbf{$5.25$}
-\end{tabular}
+\includegraphics{InsuranceTable2.png}
+%\renewcommand{\arraystretch}{2}
+%\begin{tabular}{@{}lcccccc@{}}
+% & \# of bikes & $\times$ & proportion that will be stolen & $=$ & \# of thefts\\\midrule
+%\textit{Unlocked} & $150$ & $\times$ & $\frac{1}{40}$ & $=$  & $3.75$\\
+%\textit{Locked} & $150$ & $\times$ & $\frac{1}{100}$ & $=$ & $1.5$\\\bottomrule
+%\textbf{Total} & & & & & \textbf{$5.25$}
+%\end{tabular}
 \end{center}
 
 An expectation of $5.25$ thefts corresponds to an expected loss in bicycle value of $5.25\times\$200=\$1,050$. Since $\$1,050\div 300=\$3.50$, Phoebe convinces each bike owner to pay her $\$5$ per month to insure their bike against theft. If Phoebe's calculations are close to accurate, then she stands to make a profit of $\$1,500-\$1,000=\$500$ if $5$ bikes are stolen and $\$1,500-\$1,200=\$300$ if $6$ bikes are stolen.
