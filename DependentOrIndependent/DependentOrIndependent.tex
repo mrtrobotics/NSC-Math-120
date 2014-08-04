@@ -42,55 +42,57 @@ An easy way to determine whether two events are dependent or independent is to l
 
 For example, the following is the probability tree for drawing a ball from an urn containing two red balls, one white ball, and one blue ball, followed by flipping a biased coin.
 
-
-\begin{tikzpicture}[grow=right,level 1.style={level distance=2cm, sibling distance=2.5cm},level 2.style={level distance=2cm, sibling distance=.75cm}]
-\node{}
-    child {
-    	node[] {blue}
-        	child {
-            	node[label=right:{T}] {}
-                edge from parent
-                node[below] {\footnotesize $\frac{1}{3}$}
-            }
-            child {
-            	node[label=right:{H}] {}
-                edge from parent
-                node[above] {\footnotesize $\frac{2}{3}$}
-            }
-        edge from parent
-        node[below] {\footnotesize $\frac{1}{4}$}
-    }
-    child {
-    	node[] {white}
-        	child {
-            	node[label=right:{T}] {}
-                edge from parent
-                node[below] {\footnotesize $\frac{1}{3}$}
-            }
-            child {
-            	node[label=right:{H}] {}
-                edge from parent
-                node[above] {\footnotesize $\frac{2}{3}$}
-            }
-        edge from parent
-        node[above] {\footnotesize $\frac{1}{4}$}
-    }
-    child {
-    	node[] {red}
-        	child {
-            	node[label=right:{T}] {}
-                edge from parent
-                node[below] {\footnotesize $\frac{1}{3}$}
-            }
-            child {
-            	node[label=right:{H}] {}
-                edge from parent
-                node[above] {\footnotesize $\frac{2}{3}$}
-            }
-        edge from parent
-        node[above] {\footnotesize $\frac{2}{4}$}
-    };
-\end{tikzpicture}
+\begin{image}
+\includegraphics{ProbTree1.pgn}
+%\begin{tikzpicture}[grow=right,level 1.style={level distance=2cm, sibling distance=2.5cm},level 2.style={level distance=2cm, sibling distance=.75cm}]
+%\node{}
+%    child {
+%    	node[] {blue}
+%        	child {
+%            	node[label=right:{T}] {}
+%                edge from parent
+%                node[below] {\footnotesize $\frac{1}{3}$}
+%            }
+%            child {
+%            	node[label=right:{H}] {}
+%                edge from parent
+%                node[above] {\footnotesize $\frac{2}{3}$}
+%            }
+%        edge from parent
+%        node[below] {\footnotesize $\frac{1}{4}$}
+%    }
+%    child {
+%    	node[] {white}
+%        	child {
+%            	node[label=right:{T}] {}
+%                edge from parent
+%                node[below] {\footnotesize $\frac{1}{3}$}
+%            }
+%            child {
+%            	node[label=right:{H}] {}
+%                edge from parent
+%                node[above] {\footnotesize $\frac{2}{3}$}
+%            }
+%        edge from parent
+%        node[above] {\footnotesize $\frac{1}{4}$}
+%    }
+%    child {
+%    	node[] {red}
+%        	child {
+%            	node[label=right:{T}] {}
+%                edge from parent
+%                node[below] {\footnotesize $\frac{1}{3}$}
+%            }
+%            child {
+%            	node[label=right:{H}] {}
+%                edge from parent
+%                node[above] {\footnotesize $\frac{2}{3}$}
+%            }
+%        edge from parent
+%        node[above] {\footnotesize $\frac{2}{4}$}
+%    };
+%\end{tikzpicture}
+\end{image}
 
 
 If you focus on the part to the right of the red, white, and blue, you can see that they are completely identical. This means that drawing the ball and flipping the coin are independent.
@@ -98,41 +100,42 @@ If you focus on the part to the right of the red, white, and blue, you can see t
 The following is an example of a probability tree for drawing two balls without replacement from an urn containing 3 white balls and 5 black balls.
 
 \begin{image}
-\begin{tikzpicture}[grow=right]
-\tikzstyle{level 1}=[level distance=2cm, sibling distance=2.5cm]
-\tikzstyle{level 2}=[level distance=2cm, sibling distance=.75cm]
-\node{}
-    child {
-    	node[] {black}
-        	child {
-            	node[label=right:{black}] {}
-                edge from parent
-                node[below] {\footnotesize $\frac{4}{7}$}
-            }
-            child {
-            	node[label=right:{white}] {}
-                edge from parent
-                node[above] {\footnotesize $\frac{3}{7}$}
-            }
-        edge from parent
-        node[below] {\footnotesize $\frac{5}{8}$}
-    }
-    child {
-    	node[] {white}
-        	child {
-            	node[label=right:{black}] {}
-                edge from parent
-                node[below] {\footnotesize $\frac{5}{7}$}
-            }
-            child {
-            	node[label=right:{white}] {}
-                edge from parent
-                node[above] {\footnotesize $\frac{2}{7}$}
-            }
-        edge from parent
-        node[above] {\footnotesize $\frac{3}{8}$}
-    };
-  \end{tikzpicture}
+\includegraphics{ProbTree2}
+%\begin{tikzpicture}[grow=right]
+%\tikzstyle{level 1}=[level distance=2cm, sibling distance=2.5cm]
+%\tikzstyle{level 2}=[level distance=2cm, sibling distance=.75cm]
+%\node{}
+%    child {
+%    	node[] {black}
+%        	child {
+%            	node[label=right:{black}] {}
+%                edge from parent
+%                node[below] {\footnotesize $\frac{4}{7}$}
+%            }
+%            child {
+%            	node[label=right:{white}] {}
+%                edge from parent
+%                node[above] {\footnotesize $\frac{3}{7}$}
+%            }
+%        edge from parent
+%        node[below] {\footnotesize $\frac{5}{8}$}
+%    }
+%    child {
+%    	node[] {white}
+%        	child {
+%            	node[label=right:{black}] {}
+%                edge from parent
+%                node[below] {\footnotesize $\frac{5}{7}$}
+%            }
+%            child {
+%            	node[label=right:{white}] {}
+%                edge from parent
+%                node[above] {\footnotesize $\frac{2}{7}$}
+%            }
+%        edge from parent
+%        node[above] {\footnotesize $\frac{3}{8}$}
+%    };
+%  \end{tikzpicture}
 \end{image}
 
 Even though the outcomes are the same, the probabilities of each outcome changes depending on which color was drawn first.

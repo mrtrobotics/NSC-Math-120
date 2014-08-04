@@ -35,35 +35,36 @@ Now she flips the coin and truthfully announces that it's a head. What can you s
 We will use a probability tree to describe this situation. Notice that for the two-headed coin, we still have two sides, so that when we draw out the tree we will draw two branches and label them ``H1'' and ``H2.'' The boxed outcomes are all the ways that we would see a head. (All the branches in the picture are 50-50, so we will leave that out to avoid clutter.)
 
 \begin{image}
-\begin{tikzpicture}[grow=right]
-\tikzstyle{level 1}=[level distance=2cm, sibling distance=1.5cm]
-\tikzstyle{level 2}=[level distance=2cm, sibling distance=.5cm]
-\node{}
-    child {
-    	node[] {2-Head}
-        	child {
-            	node[label=right:{\boxed{\text{H2}}}] {}
-                edge from parent
-            }
-            child {
-            	node[label=right:{\boxed{\text{H1}}}] {}
-                edge from parent
-            }
-        edge from parent
-    }
-    child {
-    	node[] {Normal}
-        	child {
-            	node[label=right:{T}] {}
-                edge from parent
-            }
-            child {
-            	node[label=right:{\boxed{\text{H}}}] {}
-                edge from parent
-            }
-        edge from parent
-    };
-\end{tikzpicture}
+\includegraphics{2headedcoin1.png}
+%\begin{tikzpicture}[grow=right]
+%\tikzstyle{level 1}=[level distance=2cm, sibling distance=1.5cm]
+%\tikzstyle{level 2}=[level distance=2cm, sibling distance=.5cm]
+%\node{}
+%    child {
+%    	node[] {2-Head}
+%        	child {
+%            	node[label=right:{\boxed{\text{H2}}}] {}
+%                edge from parent
+%            }
+%            child {
+%            	node[label=right:{\boxed{\text{H1}}}] {}
+%                edge from parent
+%            }
+%        edge from parent
+%    }
+%    child {
+%    	node[] {Normal}
+%        	child {
+%            	node[label=right:{T}] {}
+%                edge from parent
+%            }
+%            child {
+%            	node[label=right:{\boxed{\text{H}}}] {}
+%                edge from parent
+%            }
+%        edge from parent
+%    };
+%\end{tikzpicture}
 \end{image}
 
 Notice that there are three equally likely outcomes where we see a head and two of them correspond to the 2-headed coin. This means that the probability that we have picked the two-headed coin is $\frac{2}{3}$.

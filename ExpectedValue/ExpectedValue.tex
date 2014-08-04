@@ -83,21 +83,22 @@ And we can read off the value of each event from the description of the game. No
 This information can be put into a probability tree. The values are listed at the end of the branches.
 
 \begin{image}
-\tikzstyle{level 1}=[level distance=2cm, sibling distance=1cm]
-\tikzstyle{level 2}=[level distance=2cm, sibling distance=.75cm]
-\begin{tikzpicture}[grow=right]
-\node{}
-    child {
-       	node[label=right:{Tails: Lose \$$1$}] {}
-        edge from parent
-        node[below] {\footnotesize $\frac{1}{2}$}
-    }
-    child {
-       	node[label=right:{Heads: Win \$$0.99$}] {}
-        edge from parent
-        node[above] {\footnotesize $\frac{1}{2}$}
-    };
-  \end{tikzpicture}
+\includegraphics{ExpectedValue1}
+%\tikzstyle{level 1}=[level distance=2cm, sibling distance=1cm]
+%\tikzstyle{level 2}=[level distance=2cm, sibling distance=.75cm]
+%\begin{tikzpicture}[grow=right]
+%\node{}
+%    child {
+%       	node[label=right:{Tails: Lose \$$1$}] {}
+%        edge from parent
+%        node[below] {\footnotesize $\frac{1}{2}$}
+%    }
+%    child {
+%       	node[label=right:{Heads: Win \$$0.99$}] {}
+%        edge from parent
+%        node[above] {\footnotesize $\frac{1}{2}$}
+%    };
+%  \end{tikzpicture}
 \end{image}
 
 We can now compute the expected value:
