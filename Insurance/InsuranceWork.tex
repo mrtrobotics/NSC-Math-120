@@ -23,11 +23,11 @@ Understanding insurance involves understanding risk. Understanding risk involves
 
 Insurance companies employ people skilled in a branch of applied mathematics known as actuarial science. These actuaries perform complex calculations to help companies set premiums (prices) for their policies that will allow the company to satisfy the legitimate claims against those policies, cover business expenses, and make a profit.
 
-We will examine simplified situations involving insurance to get a sense of the concepts and computations involved.
+We will examine simplified situations involving insurance to get a sense of the concepts and computations involved. Our first example shows the kind of information that is of use to insurers.
 
-In the mid-$17^\text{th}$ century, a London merchant named John Graunt collected and analyzed mortality rolls (lists of burials), originally kept to track the Plague, and published a short work entitled \textit{Natural and Political Observations Made upon the Bills of Mortality}. The most important idea in Graunt's work was the analysis of the distribution of lifespans for a group of people born at the same time. His London Life Table showed the percentage of people who would likely live to a given age at that time.\footnote{Burton, D.\ M.\ (2011). \textit{The history of mathematics: An introduction} (7th ed.). New York, NY: McGraw-Hill.}
+In the mid-$17^\text{th}$ century, a London merchant named John Graunt collected and analyzed mortality rolls (lists of burials), originally kept to track the Bubonic Plague, and published a short work entitled \textit{Natural and Political Observations Made upon the Bills of Mortality}. The most important idea in Graunt's work was the analysis of the distribution of lifespans for a group of people born at the same time. His London Life Table showed the percentage of people who would likely live to a given age at that time.\footnote{Burton, D.\ M.\ (2011). \textit{The history of mathematics: An introduction} (7th ed.). New York, NY: McGraw-Hill.}
 \begin{image}
-\includegraphics{InsuranceTable1.png}
+\includegraphics{InsuranceTable1.png}[scale=1.5]
 %\begin{tabular}{@{}cc@{}}\toprule
 %\textbf{Age} & \textbf{$\%$ of Survivors}\\\midrule
 %$0$ & $100$\\
@@ -49,7 +49,7 @@ According to Graunt's London Life Table, what percentage of the population did n
 	
 \end{question}
 
-With the kind of information like that found in Graunt's table, a prospective insurer could answer questions like how probable is it that they would be to face a life-insurance claim from a $16$-year old client in the next $10$ years.
+With the kind of information like that found in Graunt's table, a prospective insurer could answer questions like: How probable is it that a $16$-year old buying life-insurance now will die within the next $10$ years?
 
 \begin{question}
 According to Graunt's table, what percentage of $16$-year olds lived to be $26$-years old?
@@ -60,18 +60,21 @@ Out of $100$ people, how many lived to $16$? to $26$?
 \begin{hint}
 What percentage of $40$ is $25$? 
 \end{hint}
+\begin{hint}
+Don't round your answer.
+\end{hint}
 \answer{$62.5$}$\%$
 	
 \end{question}
 
-Modern insurance companies collect and analyze a vast array of information so that they can accurate predictions about the number and size of the claims they will face. Here is a small example:
+Modern insurance companies collect and analyze a vast array of information so that they can make accurate predictions about the number and size of the claims they will face. Here is a small example where information is collected, analyzed, and the results used to sell insurance:
 
 Phoebe's neighborhood has been plagued by bicycle thefts. As a result, some bicycle owners have bought bike locks and all are interested in insuring against theft. After conducting some research, Phoebe estimates that for every 40 unlocked bicycles in the neighborhood, one is stolen each month, but only $1$ in $100$ locked bikes is stolen each month. Furthermore, Phoebe calculates the average value of the bicycles in her neighborhood at $\$200$ each.
 
 Using the above data, and the fact that her neighborhood contains 300 bicycles, half of which are unlocked, Phoebe creates the following table:
 
 \begin{center}
-\includegraphics{InsuranceTable2.png}
+\includegraphics{InsuranceTable2.png}[scale=1.5]
 %\renewcommand{\arraystretch}{2}
 %\begin{tabular}{@{}lcccccc@{}}
 % & \# of bikes & $\times$ & proportion that will be stolen & $=$ & \# of thefts\\\midrule
@@ -96,10 +99,11 @@ How much will Phoebe collect in premiums from the owners of unlocked bicycles? H
 How much will $6$ bicycle thefts cost Phoebe?
 \end{hint}
 \begin{hint}
-Phoebe's profit is calculated by subtracting the costs from premiums collected.
+Phoebe's profit is calculated by subtracting the cost of the claims she must pay from the premiums she collected.
 \end{hint}
 $\$$\answer{$375$}
 
 \end{question}
 
+We will revisit Phoebe's bicycle insuring business in class to see how she can become even more sure of turning a profit, but for now we are only interested in the general process of using estimated risk to help calculate a reasonable cost for insurance.
 \end{document}
