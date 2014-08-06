@@ -100,7 +100,7 @@ The maximum $y$ value is $y=$ \answer{27}.
 \begin{question}
 In this problem we consider the problem of creating a box by taking a $\SI{6}{in}\times\SI{8}{in}$ sheet and cutting out square corners and folding up the sides as pictured below.
 \begin{image}
-\begin{tikzpicture}[line width=1pt]
+\begin{tikzpicture}[line width=1pt,scale=2]
 \draw (-2,-1) rectangle (2,1) (-2,-2) rectangle (2,2) (-3,-1) rectangle (3,1);
 \draw[style=dashed] (-3,-1) --node[left]{$x$}(-3,-2) --node[below]{$x$} (-2,-2);
 \draw[style=dashed] (3,-1) --node[right]{$x$}(3,-2) --node[below]{$x$} (2,-2);
@@ -115,7 +115,7 @@ We will ignore the units for much of the calculation, but we need to put them ba
 \begin{hint}
 When the box is folded it looks like
 \begin{image}
-\begin{tikzpicture}[line width=1pt,scale=.5]
+\begin{tikzpicture}[line width=1pt,scale=1]
 \draw (0,0,0) -- (8,0,0) --node[right]{$x$} (8,2,0) -- (0,2,0) -- cycle;
 \draw (0,0,4) --node[below]{$8-2x$} (8,0,4) -- (8,2,4) -- (0,2,4) -- cycle;
 \draw (0,0,0) -- (0,0,4) (8,0,0) --node[right]{$6-2x$}(8,0,4) (8,2,0) -- (8,2,4) (0,2,0) -- (0,2,4);
@@ -140,7 +140,7 @@ The side length of each corner square is  $x=$ \answer{1.13} inches.
 
 Memorize the formulas below. We will assume you know them in class and on the test.
 \begin{image}
-\begin{tikzpicture}[line width=1.2pt]
+\begin{tikzpicture}[line width=1.2pt,scale=2]
 \begin{scope}
 \draw[fill=gray!20] (0,0) --node[below]{$s$} (2,0) --node[right]{$s$} (2,2) -|(0,0);
 \draw (1,2) node[above]{Square};
