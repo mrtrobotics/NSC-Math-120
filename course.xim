@@ -23,8 +23,6 @@ Fraud/Fraud
   Fraud/Limitations
 Credit/Credit
   Credit/CreditWork
-Insurance/Insurance
-  Insurance/InsuranceWork
 Taxes/Taxes
   Taxes/TaxesWork
 IntroToFunctions/IntroToFunctions
@@ -45,7 +43,7 @@ Modeling/Modeling
 Optimization/Optimization
 Mortgage/Mortgage
   Mortgage/MortgageWork
-Inflation/Inflation
+  Inflation/Inflation
   Inflation/InflationWork
 
 
